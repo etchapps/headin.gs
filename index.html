@@ -333,14 +333,231 @@
             </style>
           </article>
 
+          <article id="hello-people">
+              <div class="sandbox sandbox-hello-people">
+                <h1 class="heading heading-hello-people">
+                Hello
+                <span class="bottom">People</span></h1>
+              </div>
+
+              <style type="text/css">
+               
+                @import url(http://fonts.googleapis.com/css?family=Amatic+SC:700);
+
+                body {
+                    margin: 0;
+                    background-color: #64cae0;    
+                }
+
+                .sandbox-hello-people {
+                  padding: 10em; 
+                }
+
+                h1 {
+                  font-family: 'Amatic SC', cursive;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  font-size: 9em;
+                  color: #fff;
+                  line-height: 0.8em;
+                  text-shadow: 0.05em 0.05em 0 rgba(0, 0, 0, 0.1);
+                  width: 20%;
+                }
+
+                .heading-hello-people {
+                  margin: auto;
+                  
+                  &::before {
+                    height: 0.05em;
+                    width: 1.3em;
+                    content: "";
+                    background-color: #fff;
+                    display: block;
+                    border-radius: 0.5em;
+                    margin-bottom: 0.1em;
+                    box-shadow: 0.05em 0.05em 0 rgba(0, 0, 0, 0.1);
+                    
+                    transform:rotate(-2deg);
+                    -ms-transform:rotate(-2deg); /* IE 9 */
+                    -webkit-transform:rotate(-2deg); /* Safari and Chrome */
+
+                  }
+                  
+                  &::after {
+                    height: 0.05em;
+                    width: 1.4em;
+                    content: "";
+                    background-color: #fff;
+                    display: block;
+                    border-radius: 0.5em;
+                    margin-top: 0.1em;
+                    box-shadow: 0.05em 0.05em 0 rgba(0, 0, 0, 0.1);
+                    transform:rotate(1deg);
+                    -ms-transform:rotate(1deg); /* IE 9 */
+                    -webkit-transform:rotate(1deg); /* Safari and Chrome */
+
+                }
+
+                }
+
+                .bottom {
+                  font-size: 0.85em;
+                  
+                }
+              </style>      
+          </article>
+
+          <article id="gasoline">
+            <div class="sandbox sandbox-gasoline">
+              <h1 class="heading heading-gasoline">
+                  Gasoline
+              </h1>
+            </div>
+
+            <style type="text/css">
+                @import url(http://fonts.googleapis.com/css?family=Six+Caps);
+
+                body {
+                    margin: 0;
+                    background-color: #fbe266;
+
+                    
+                }
+
+                .sandbox-gasoline {
+                  padding: 5em 0 5em 0;
+                }
+
+                h1 {
+                  font-family: Six Caps;
+                  font-weight: 400;
+                  text-transform: uppercase;
+                  font-size: 9em;
+                  color: rgba(240, 102, 105, 0.9);
+                  letter-spacing: 0.04em;
+                  text-align: center;
+                  line-height: 2.6em;
+                  text-shadow: 0.02em 0.02em 0 rgba(0, 0, 0, 0.05);
+
+
+                }
+
+                .heading-gasoline {
+                  margin: auto;
+                  border-radius: 50%;
+                  width: 2.5em;
+                  height: 2.5em;
+                  background-image:url('https://dl-web.dropbox.com/get/etch%20projects/headin.gs/gasoline-texture.svg?_subject_uid=96301877&w=AACdn9PJ1jpU1eN2T38H0-x5FGAnQ3Nn_qVMzb5xDUAFCw');
+                  background-size: 100%;
+                  background-repeat:no-repeat;
+                  position: relative;
+                  box-shadow: 0.1em 0.1em 0 rgba(0, 0, 0, 0.03);
+                  background-color: #ffffff;
+                  
+                  &::before {
+                    width: 3em;
+                    height: 1.1em;
+                    top: 0.75em;
+                    margin-left: -0.3em;
+                    border: 0.03em solid rgba(240, 102, 105, 0.9);
+                    box-shadow: 0.06em 0.06em 0 rgba(0, 0, 0, 0.05);
+                    display: block;
+                    content: "";
+                    position: absolute;
+                }
+
+
+                 
+
+                }
+            </style>
+          </article>
+
+          <article id="correct-pronounciation">
+            <div class="sandbox sandbox-correct-pronounciation">
+              <h1 class="heading heading-correct-pronounciation">
+                The
+                <em>Correct</em>
+                Pronounciation
+              </h1>
+            </div>
+          
+
+               <style type="text/css">
+
+                  @import url(http://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
+
+
+                  body {
+                      margin: 0;
+                      background-color: #5774b8;
+
+                  }
+
+
+                  .sandbox-correct-pronounciation {
+                    padding: 10em 0 10em 0;
+                  }
+
+                  .heading-correct-pronounciation {
+
+                    margin: auto;
+                    text-align: center;
+                    position: relative;
+                  }
+
+
+                  h1 {
+                    color: #fff;
+                    font-family: 'Cardo', serif;
+                    font-size: 1.5em;
+                    font-weight: normal;
+                    font-style: italic;
+                    letter-spacing: 0.1em;
+                    line-height: 2.2em;
+                  }
+
+                  em {
+                    font-family: 'EB Garamond', serif;
+                    font-size: 3.5em;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                    display: block;
+                    font-style:normal;
+                    padding-top: 0.1em;
+                    text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+                    
+                    &::before, &::after {
+                    content: "§";
+                    display: inline-block;
+                    -webkit-transform: rotate(90deg);
+                    -moz-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                    opacity: 0.2;
+                    margin: 0 0.6em;
+                    font-size: 0.5em;
+                  }
+
+                  }
+
+
+                  .bottom {
+                    font-size: 1.5em;
+                    letter-spacing: 0.07em;
+                    font-size: 1em;
+                    display: block;
+                  }
+
+              </style>
+          </article>
+
 
 
         </section>
 
         
-
-
-        <!-- Boldly Go -->
         
     </main>
 
