@@ -1,0 +1,49 @@
+//
+// Skin
+// --------------------------------------------------
+
+// Component Variables
+$skin-dark-bg: #3a3a3a;
+$skin-dark-color: #999;
+$skin-dark-heading-color: #ccc;
+
+.skin-dark {
+  background: $skin-dark-bg;
+  color: $skin-dark-color;
+
+  // typography
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $skin-dark-heading-color;
+    font-weight: 200;
+
+    em {
+      font-style:normal;
+      color: #fff;
+    }
+  }
+
+  p, li {
+    color: inherit;
+  }
+
+  // link and buttons
+
+  a {
+    color: $brand-primary;
+  }
+
+  .btn {
+    background: $skin-dark-bg;
+    border-color: $skin-dark-color;
+    color: $skin-dark-color;
+
+    &:hover,
+    &:focus {
+      border-color: #fff;
+      color: #fff;
+    }
+  }
+
+
+}

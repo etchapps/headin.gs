@@ -1,0 +1,50 @@
+.palette {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1rem; }
+  .palette [class*="swatch-"] {
+    color: #fff;
+    font-size: 0.75em;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em; }
+  .palette .swatch-darkest {
+    background: #222222; }
+  .palette .swatch-darker {
+    background: #444444; }
+  .palette .swatch-dark {
+    background: #666666; }
+  .palette .swatch-mid {
+    background: #888888; }
+  .palette .swatch-light {
+    background: #aaaaaa; }
+  .palette .swatch-lighter {
+    background: #cccccc; }
+  .palette .swatch-lightest {
+    background: #eeeeee;
+    color: #888888; }
+  .palette .swatch-primary {
+    background: #ff6666; }
+  .palette .swatch-secondary {
+    background: #ff9999; }
+  .palette .swatch-danger {
+    background: #ff3366; }
+  .palette .swatch-warning {
+    background: #ffff66;
+    color: #888888; }
+  .palette .swatch-success {
+    background: #99ff99; }
+  .palette .swatch-info {
+    background: #3399ff; }
+
+.font-serif {
+  font-family: "Merriweather", Georgia, Cambria, "Times New Roman", Times, serif; }
+
+.font-sans {
+  font-family: lato, "Merriweather Sans", "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; }
+
+.font-mono {
+  font-family: courier, "courier new", monospace; }
+
+.font-hand {
+  font-family: cursive; }
