@@ -32,63 +32,78 @@
             </div>
         </section>
 
-        <!-- Headings Prototype -->
+        <section id="headings">
 
-        <style>
-          /* Global styles */
+          <style>
+            /* Global styles */
+            /*Todo - move to css*/
 
-          * {
-            -moz-box-sizing: border-box; 
-            -webkit-box-sizing: border-box; 
-            box-sizing: border-box;
-          }
+            * {
+              -moz-box-sizing: border-box; 
+              -webkit-box-sizing: border-box; 
+              box-sizing: border-box;
+            }
+            
+            .sandbox {
+              padding: 5% 10%;
+              font-size: 1.5vmin;
+              min-height: 100vh;
+            }
+
+            .heading {
+              margin:0;
+            }
+
+            .animated {
+              -webkit-animation-fill-mode:both;
+              -moz-animation-fill-mode:both;
+              -ms-animation-fill-mode:both;
+              -o-animation-fill-mode:both;
+              animation-fill-mode:both;
+            }
+
+          </style>
+
+
+          <article id="bold-go">
+
+            <div class="sandbox sandbox-boldly-go">
+              <h2 class="heading heading-boldly-go"><span>To boldly go <br/>where no man <br/>has gone before .</span></h2>
+            </div>
+
+            <style>
+              .sandbox-boldly-go {
+                background: #222;
+              }
+
+              .heading-boldly-go {
+                font-family: impact;
+                color: #eee;
+                font-size: 4em;
+                line-height: 1.4;
+                text-transform: uppercase;
+                margin: 0.5em 0 1em;
+              }
+
+              .heading-boldly-go span {
+                display:inline;
+                border-bottom: 0.2em solid #eee;
+              }
+            </style>
+
+          </article>
+
+          <article>
           
-          .sandbox {
-            padding: 5% 10%;
-            font-size: 1.5vmin;
-            min-height: 100vh;
-          }
+          </article>
 
-          .heading {
-            margin:0;
-          }
 
-          .animated {
-            -webkit-animation-fill-mode:both;
-            -moz-animation-fill-mode:both;
-            -ms-animation-fill-mode:both;
-            -o-animation-fill-mode:both;
-            animation-fill-mode:both;
-          }
+        </section>
 
-        </style>
+        
 
-        <!-- Boldly Go -->
-        <div class="sandbox sandbox-boldly-go">
-          <h2 class="heading heading-boldly-go"><span>To boldly go <br/>where no man <br/>has gone before .</span></h2>
-        </div>
 
-        <style>
 
-          .sandbox-boldly-go {
-            background: #222;
-          }
-
-          .heading-boldly-go {
-            font-family: impact;
-            color: #eee;
-            font-size: 4em;
-            line-height: 1.4;
-            text-transform: uppercase;
-            margin: 0.5em 0 1em;
-          }
-
-          .heading-boldly-go span {
-            display:inline;
-            border-bottom: 0.2em solid #eee;
-          }
-
-        </style>
 
         <!-- Sparse -->
         <div class="sandbox sandbox-sparse">
