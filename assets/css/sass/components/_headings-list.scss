@@ -1,0 +1,36 @@
+//
+// Headings List
+// --------------------------------------------------
+
+.headings-list {
+
+  > article {
+    display: table;
+    width: 100%;
+    height: 100vh;
+
+    .sandbox {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+}
+
+.sandbox {
+  font-size: 1.5vmin;
+  padding: 10%;
+}
+
+.heading {
+  margin:0;
+  vertical-align: baseline;
+}
+
+.animated {
+  -webkit-animation-fill-mode:both;
+  -moz-animation-fill-mode:both;
+  -ms-animation-fill-mode:both;
+  -o-animation-fill-mode:both;
+  animation-fill-mode:both;
+}

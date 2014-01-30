@@ -15,8 +15,6 @@ $skin-dark-heading-color: #ccc;
 
   h1, h2, h3, h4, h5, h6 {
     color: $skin-dark-heading-color;
-    font-weight: 200;
-
     em {
       font-style:normal;
       color: #fff;
@@ -45,5 +43,19 @@ $skin-dark-heading-color: #ccc;
     }
   }
 
+  // Components
+
+  &.menu-bar {
+    background: rgba(0,0,0,0.125);
+
+    .logo {
+      color:rgba(255,255,255,0.75);
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+  }
 
 }

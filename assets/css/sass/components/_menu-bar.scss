@@ -47,27 +47,12 @@
     font-size: 1em;
     padding: $padding-v $padding-h;
     margin: 0;
-    color:rgba(255,255,255,0.5);
+    color:rgba(0,0,0,0.5);
 
     &:hover {
-      color: #fff;
+      color: #333;
     }
+
   }
 
 }
-
-// .menu-trigger {
-//   display: block;
-//   width:  2.75em;
-//   height: 2.5em;
-//   float: right;
-
-//   &:before {
-//     content:'\2630';
-//     display: inline-block;
-//   }
-// }
-
-// body.has-menu-bar-fixed {
-//   padding-top: 2.5em;
-// }

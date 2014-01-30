@@ -13,10 +13,10 @@
     <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="assets/js/wfl.js"></script>
   </head>
-  <body class="has-menu-bar-fixed">
+  <body>
 
     <header role="banner">
-      <div class="menu-bar fixed">
+      <div class="menu-bar fixed skin-dark">
         <h1 class="logo pull-left">Headin<span class="text-brand">.</span>gs</h1>
       </div>
     </header>
@@ -32,101 +32,75 @@
             </div>
         </section>
 
-        <section id="headings">
+        <section id="headings" class="headings-list">
 
-            <style>
-                /* Global styles */
-                /*Todo - move to css*/
+            <article id="boldly-go">
 
-                * {
-                  -moz-box-sizing: border-box; 
-                  -webkit-box-sizing: border-box; 
-                  box-sizing: border-box;
-                }
+                <div class="sandbox sandbox-boldly-go">
+                    <h2 class="heading heading-boldly-go"><span>To boldly go <br/>where no man <br/>has gone before .</span></h2>
+                </div>
 
-                .sandbox {
-                  padding: 5% 10%;
-                  font-size: 1.5vmin;
-                  min-height: 100vh;
-                }
+                <style>
+                    .sandbox-boldly-go {
+                        background: #222;
+                    }
 
-                .heading {
-                  margin:0;
-                }
+                    .heading-boldly-go {
+                        font-family: 'Pathway Gothic One', impact, sans-serif;
+                        color: #eee;
+                        font-size: 4em;
+                        line-height: 1.25;
+                        text-transform: uppercase;
+                        margin: 0.5em 0 1em;
+                    }
 
-                .animated {
-                  -webkit-animation-fill-mode:both;
-                  -moz-animation-fill-mode:both;
-                  -ms-animation-fill-mode:both;
-                  -o-animation-fill-mode:both;
-                  animation-fill-mode:both;
-                }
+                    .heading-boldly-go span {
+                        display:inline;
+                        border-bottom: 0.125em solid #eee;
+                    }
 
-            </style>
+                </style>
 
+                <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One&text=TOBOLDLYGOWHERENOMANHASGONEBEFORE' rel='stylesheet' type='text/css'>
 
-            <article id="bold-go">
-
-            <div class="sandbox sandbox-boldly-go">
-              <h2 class="heading heading-boldly-go"><span>To boldly go <br/>where no man <br/>has gone before .</span></h2>
-            </div>
-
-            <style>
-              .sandbox-boldly-go {
-                background: #222;
-              }
-
-              .heading-boldly-go {
-                font-family: impact;
-                color: #eee;
-                font-size: 4em;
-                line-height: 1.4;
-                text-transform: uppercase;
-                margin: 0.5em 0 1em;
-              }
-
-              .heading-boldly-go span {
-                display:inline;
-                border-bottom: 0.2em solid #eee;
-              }
-            </style>
             </article>
 
             <article id="sparse">
 
-            <div class="sandbox sandbox-sparse">
-              <h2 class="heading heading-sparse">Sparse</h2>
-            </div>
+                <div class="sandbox sandbox-sparse">
+                    <h2 class="heading heading-sparse">Sparse</h2>
+                </div>
 
-            <style>
+                <style>
 
-              .sandbox-sparse {
-                background: #eee;
-              }
+                    .sandbox-sparse {
+                        background: #eee;
+                    }
 
-              .heading-sparse {
-                font-family: courier;
-                font-weight: lighter;
-                font-size: 1.5em;
-                color: #999;
-                line-height: 2;
-                letter-spacing: 4vmax;
-                text-transform: uppercase;
-                text-align: center;
-                position: relative;
-                transition:letter-spacing 2s ease-in-out;
-              }
+                    .heading-sparse {
+                        font-family: courier;
+                        font-weight: lighter;
+                        font-size: 1.5em;
+                        color: #999;
+                        line-height: 2;
+                        letter-spacing: 4vmax;
+                        text-transform: uppercase;
+                        text-align: center;
+                        position: relative;
+                        transition:letter-spacing 2s ease-in-out;
+                    }
 
-              .heading-sparse:hover {
-                letter-spacing: 0;
-              }
+                    .heading-sparse:hover {
+                        letter-spacing: 0;
+                    }
 
-              .heading-sparse:before,
-              .heading-sparse:after {
-                content: "\2015";
-                display: inline-block;
-              }
-            </style>
+                    .heading-sparse:before,
+                    .heading-sparse:after {
+                        content: "\2015";
+                        display: inline-block;
+                    }
+                </style>
+
             </article>
 
             <article id="lights">
@@ -229,20 +203,21 @@
             <article id="clean-and-grimey">
 
                 <div class="sandbox sandbox-clean-and-grimey">
-                    <h1 class="heading heading-clean-and-grimey">
-                    Bread
-                        <span class="ampersand">&</span>
-                        <span class="script">Milk</span>
-                    </h1>
+                    <h2 class="heading heading-clean-and-grimey">
+                    Clean
+                        <span class="ampersand">&amp;</span>
+                        <span class="script">Grimey</span>
+                    </h2>
                 </div>
 
+                <link href='http://fonts.googleapis.com/css?family=Oswald:700&text=CLEAN&' rel='stylesheet' type='text/css'>
+
+                <link href='http://fonts.googleapis.com/css?family=Kristi&text=Grimey' rel='stylesheet' type='text/css'>
+
                 <style>
-                    @import url(http://fonts.googleapis.com/css?family=Kristi|Oswald:700);
 
                     .sandbox-clean-and-grimey {
                         background: #f06669;
-                        padding: 2em; 
-                        overflow: hidden;
                     }
 
                     .heading-clean-and-grimey {
@@ -256,15 +231,13 @@
                     }
 
                     .heading-clean-and-grimey .ampersand {
-                        font-family: Oswald;
                         display: inline-block;
-                        color: #fff;
                         font-size: 0.25em;
                         text-decoration: underline;
                         text-shadow: 0.2em 0.2em 0 rgba(0, 0, 0, 0.2);
                         vertical-align: top;
                         position: relative;
-                        top: 1em;
+                        top: .25em;
                         left: -0.5em;
                     }
 
@@ -272,16 +245,14 @@
                         font-family: Kristi;
                         color: #000;
                         font-size: 1em;
-                        text-transform: lowercase;
-
-                        /* Rotate div */
+                        text-transform: none;
+                        text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+                        display: block;
+                        margin-top:-.75em;
+                        margin-left: -0.25em;
                         transform:rotate(-15deg);
                         -ms-transform:rotate(-15deg); /* IE 9 */
                         -webkit-transform:rotate(-15deg); /* Safari and Chrome */
-                        text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
-                        display: block;
-                        margin-top:-1em;
-                        margin-left: -0.25em;
                     }
                 </style>
             </article>
@@ -294,50 +265,51 @@
 
                 <style>
 
-                  @import url(http://fonts.googleapis.com/css?family=Archivo+Black);
+                    #crammed {
+                        display: block;
+                        height: auto;
+                        overflow: hidden;
+                    }
 
-                  .sandbox-crammed {
-                    background: #222;
-                    margin:2em;
-                    padding: 0;
-                    overflow: hidden;
-                  }
+                    .sandbox-crammed {
+                        background: #222;
+                        padding: 0;
+                    }
 
-                  .heading-crammed {
-                    font-family: Archivo Black;
-                    color: #fff;
-                    font-size: 8em;
-                    line-height: 0.65;
-                    text-transform: uppercase;
-                    margin:0;
-                    margin-bottom: -.025em;
-                    position: relative;
-                    top: -.025em;
-                    text-indent: -0.1em;
-                    text-shadow:-0.05em -0.05em 0 #222;
-                    overflow: hidden;
-                  }
+                    .heading-crammed {
+                        font-family: 'Archivo Black', impact;
+                        color: #fff;
+                        font-size: 8em;
+                        line-height: 0.65;
+                        text-transform: uppercase;
+                        margin-bottom: -.025em;
+                        position: relative;
+                        top: -.025em;
+                        text-indent: -0.1em;
+                        text-shadow:-0.05em -0.05em 0 #222;
+                        overflow: hidden;
+                    }
 
-                  .heading-crammed span {
-                    display:inline-block;
-                    margin-right: 50%;
-                  }
+                    .heading-crammed span {
+                        display:inline-block;
+                        margin-right: 50%;
+                    }
 
                 </style>
+
+                <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
+
             </article>
 
             <article id="hello-people">
 
                 <div class="sandbox sandbox-hello-people">
-                    <h1 class="heading heading-hello-people">
-                        Hello
-                        <span class="bottom">People</span>
-                    </h1>
+                    <h2 class="heading heading-hello-people">
+                        Hello <span class="bottom">People</span>
+                    </h2>
                 </div>
 
                 <style type="text/css">
-
-                    @import url(http://fonts.googleapis.com/css?family=Amatic+SC:700);
 
                     .sandbox-hello-people {
                         padding: 10em;
@@ -388,23 +360,21 @@
                       font-size: 0.85em;
                     }
 
-                </style>      
+                </style>
+
+                <link href='http://fonts.googleapis.com/css?family=Amatic+SC:700&text=HELLOPEOPLE' rel='stylesheet' type='text/css'>
             </article>
 
             <article id="gasoline">
 
                 <div class="sandbox sandbox-gasoline">
-                    <h1 class="heading heading-gasoline">
-                      Gasoline
-                    </h1>
+                    <h2 class="heading heading-gasoline">Gasoline</h2>
                 </div>
 
                 <style type="text/css">
-                    @import url(http://fonts.googleapis.com/css?family=Six+Caps);
 
                     .sandbox-gasoline {
-                        padding: 5em 0 5em 0;
-                        background-color: #fbe266;
+                        background: #fbe266;
                     }
 
                     .heading-gasoline {
@@ -421,7 +391,7 @@
                         border-radius: 50%;
                         width: 2.5em;
                         height: 2.5em;
-                        background-image:url('https://dl-web.dropbox.com/get/etch%20projects/headin.gs/gasoline-texture.svg?_subject_uid=96301877&w=AACdn9PJ1jpU1eN2T38H0-x5FGAnQ3Nn_qVMzb5xDUAFCw');
+                        background-image:url('assets/img/texture/splatter.png');
                         background-size: 100%;
                         background-repeat:no-repeat;
                         position: relative;
@@ -441,6 +411,9 @@
                         position: absolute;
                     }
                 </style>
+
+                <link href='http://fonts.googleapis.com/css?family=Six+Caps&text=GASOLINE' rel='stylesheet' type='text/css'>
+
             </article>
 
             <article id="correct-pronounciation">
@@ -454,7 +427,6 @@
                 </div>
           
                <style type="text/css">
-                    @import url(http://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
 
                     .sandbox-correct-pronounciation {
                         padding: 10em 0 10em 0;
@@ -506,14 +478,133 @@
                         display: block;
                     }
 
-              </style>
+                </style>
+
+                <link href='http://fonts.googleapis.com/css?family=Cardo:400italic&text=ThePronounciation' rel='stylesheet' type='text/css'>
+                <link href='http://fonts.googleapis.com/css?family=EB+Garamond&text=CORRECT' rel='stylesheet' type='text/css'>
+
+            </article>
+
+            <article id="brick-wall">
+                <div class="sandbox sandbox-brick-wall">
+                    <h2 class="heading heading-brick-wall">Another <strong>brick</strong> in the <strong>wall</strong></h2>
+                </div>
+
+                <style>
+
+                    .sandbox-brick-wall {
+                        background-image: url("assets/img/photo/brickwall.jpg");
+                        background-attachment: fixed;
+                        background-size: 100%;
+                    }
+
+                    .heading-brick-wall {
+                        text-align: center;
+                        font-family: 'Inika';
+                        color: #fff;
+                        font-size: 4em;
+                    }
+
+                    .heading-brick-wall strong {
+                        font-size: 3em;
+                        font-family: 'Lilita One';
+                        text-transform: uppercase;
+                        display: block;
+                        background-image: url("assets/img/photo/brickwall-blur.jpg");
+                        background-attachment: fixed;
+                        background-size: 100%;
+                        -webkit-background-clip: text; 
+                        -moz-background-clip: text;  
+                        background-clip: text;  
+                        color: rgba(0,0,0,0);
+                    }
+
+
+                </style>
+
+                <link href='http://fonts.googleapis.com/css?family=Lilita+One&text=BRICKWALL' rel='stylesheet' type='text/css'>
+
+                <link href='http://fonts.googleapis.com/css?family=Inika:400&text=Anotherinthe' rel='stylesheet' type='text/css'>
+
+            </article>
+
+            <article id="once-upon">
+                <div class="sandbox sandbox-once-upon">
+                    <h2 class="heading heading-once-upon">Once upon a time...</h2>
+                </div>
+                <style>
+                    .sandbox-once-upon {
+                        background: url("assets/img/texture/paper.jpg");
+                    }
+
+                    .heading-once-upon {
+                        font-family: 'IM Fell English', serif;
+                        font-weight:400;
+                        font-size: 4em;
+                        color:rgba(0,0,0,0.65);
+                        text-align: center;
+                        vertical-align: baseline;
+                    }
+
+                </style>
+                <link href='http://fonts.googleapis.com/css?family=IM+Fell+English:400italic&text=Onceuponatime.' rel='stylesheet' type='text/css'>
+            </article>
+
+            <article id="annual">
+                <div class="sandbox sandbox-annual">
+                    <h2 class="heading heading-annual">Best sites of <br/><span>2014</span></h2>
+                </div>
+                <style>
+                    .sandbox-annual {
+                        background: #f66;
+                    }
+
+                    .heading-annual {
+                        font-size: 4em;
+                        font-weight: normal;
+                        color:rgba(0,0,0,0.65);
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+
+                    .heading-annual span {
+                        font-size: 2.7em;
+                        display: inline-block;
+                        font-family: 'Monoton', cursive;
+                        border-bottom: 0.1em double;
+                    }
+
+                </style>
+                <link href='http://fonts.googleapis.com/css?family=Monoton&text=2014' rel='stylesheet' type='text/css'>
+            </article>
+
+            <article id="rgb">
+                <div class="sandbox sandbox-rgb">
+                    <h2 class="heading heading-rgb">color</h2>
+                </div>
+                <style>
+                    .sandbox-rgb {
+                        background: #fff;
+                    }
+
+                    .heading-rgb {
+                        font-size: 15em;
+                        font-family: 'Londrina Outline';
+                        font-weight: normal;
+                        color:#6f6;
+                        text-align: center;
+                        text-shadow: 0.0125em -0.0125em #f66, 0.0125em 0.0125em #66f;
+                    }
+
+                </style>
+                <link href='http://fonts.googleapis.com/css?family=Londrina+Outline&text=color' rel='stylesheet' type='text/css'>
             </article>
 
         </section>
 
     </main>
 
-    <footer class="wrapper" role="complimetary">
+    <footer class="wrapper skin-dark" role="complimetary">
       <div class="site-info">
         <p>a side project by <a href="http://etchapps.com">Etch</a></p>
         <p><a href="https://twitter.com/intent/user?screen_name=etch">Follow @etch</a></p>
@@ -522,7 +613,7 @@
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
     <script src="assets/js/base.js"></script>
 

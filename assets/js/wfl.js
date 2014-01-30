@@ -5,8 +5,6 @@
   WebFontConfig = {
     google: { 
       families: [ 
-      'Merriweather:300,900,300italic,900italic:latin',
-      'Chivo:400,400italic,900,900italic:latin',
       'Lato:100,300,900,900italic,300italic:latin'
       ] 
     }
