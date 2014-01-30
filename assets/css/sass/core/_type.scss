@@ -116,8 +116,8 @@ a:link {
 
 }
 
-p a,
-p a:link {
+p a:not(.btn),
+p a:link:not(.btn) {
   padding: 0.5em; // creates larger target area.
   margin: -0.5em;
   text-decoration: underline;

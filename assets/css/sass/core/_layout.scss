@@ -56,6 +56,15 @@ body {
   margin:0 auto;
 }
 
+footer {
+  text-align: center;
+  padding: $spacing-v $spacing-h;
+}
+
+.site-info {
+  padding: $spacing-v *4 0;
+}
+
 
 // helpers
 // ---------------------

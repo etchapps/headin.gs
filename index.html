@@ -255,6 +255,76 @@
                         -webkit-transform:rotate(-15deg); /* Safari and Chrome */
                     }
                 </style>
+
+                
+
+                <div data-theme-id="4075" data-slug-hash="fsjkH" data-default-tab="css" class='codepen'>
+
+                    <pre>
+                        <code>
+
+                            @import url(http://fonts.googleapis.com/css?family=Kristi|Oswald:700);
+
+                            body {
+                                margin: 0;
+                                background: #f06669;
+
+                            }
+
+                            .sandbox-clean-and-grimey {
+                              padding: 2em; 
+                              overflow: hidden;
+                            }
+
+
+                             .heading-clean-and-grimey {
+                               font-family: Oswald;
+                               color:#fff;
+                               font-weight: 400;
+                               font-size: 10em;
+                               text-transform: uppercase;
+                               text-shadow: 0.05em 0.05em 0 rgba(0, 0, 0, 0.2);
+                               text-align: center;
+                             }
+
+                            .ampersand {
+                              font-family: Oswald;
+                              display: inline-block;
+                              color: #fff;
+                              font-size: 0.25em;
+                              text-decoration: underline;
+                              text-shadow: 0.2em 0.2em 0 rgba(0, 0, 0, 0.2);
+                              vertical-align: top;
+                              position: relative;
+                              top: 1em;
+                              left: -0.5em;
+                            }
+
+                            .script {
+                              font-family: Kristi;
+                              color: #000;
+                              font-size: 1em;
+                              text-transform: lowercase;
+
+                              
+                              /* Rotate div */
+                              
+                              transform:rotate(-15deg);
+                              -ms-transform:rotate(-15deg); /* IE 9 */
+                              -webkit-transform:rotate(-15deg); /* Safari and Chrome */
+                              text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+                              display: block;
+                              margin-top:-1em;
+                              margin-left: -0.25em;
+                              
+
+                            }
+
+                        </code>
+                    </pre>
+                    <p>See the Pen <a href='http://codepen.io/danburrows/pen/fsjkH'>Clean & Grimey</a> by Daniel Burrows (<a href='http://codepen.io/danburrows'>@danburrows</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                </div>
+
             </article>
       
             <article id="crammed">
@@ -580,7 +650,7 @@
 
             <article id="rgb">
                 <div class="sandbox sandbox-rgb">
-                    <h2 class="heading heading-rgb">color</h2>
+                    <h2 class="heading heading-rgb">Two hundred and fifty-six colors.</h2>
                 </div>
                 <style>
                     .sandbox-rgb {
@@ -588,16 +658,58 @@
                     }
 
                     .heading-rgb {
-                        font-size: 15em;
+                        font-size: 8em;
                         font-family: 'Londrina Outline';
                         font-weight: normal;
                         color:#6f6;
                         text-align: center;
-                        text-shadow: 0.0125em -0.0125em #f66, 0.0125em 0.0125em #66f;
+                        text-shadow: 0.015em -0.015em #f66, 0.015em 0.015em #66f;
                     }
 
                 </style>
-                <link href='http://fonts.googleapis.com/css?family=Londrina+Outline&text=color' rel='stylesheet' type='text/css'>
+                <link href='http://fonts.googleapis.com/css?family=Londrina+Outline&text=Two hundred and fifty-six colors.' rel='stylesheet' type='text/css'>
+            </article>
+
+            <article id="todo">
+                <div class="sandbox sandbox-todo">
+                    <h2 class="heading heading-todo">Unless you&rsquo;ve got a better idea, <br/>this will have <span class="tickbox">Todo</span></h2>
+                </div>
+                <style>
+                    .sandbox-todo {
+                        background: #6f6;
+                    }
+
+                    .heading-todo {
+                        font-size: 4em;
+                    }
+
+                    .heading-todo .tickbox:after,
+                    .heading-todo .tickbox:before {
+                        display: inline-block;
+                    }
+
+                    .heading-todo .tickbox {
+                        display: inline-block;
+                    }
+
+                    .heading-todo .tickbox:before {
+                        content:"\2610";
+                        float: right;
+                        font-size:2em;
+                        line-height: .5;
+                        margin-left: -.65em;
+                    }
+
+                    .heading-todo .tickbox:after {
+                        content:"\2713";
+                        color:#fff;
+                        font-size:1.25em;
+                        margin-left: .25em;
+                        text-shadow:.05em .05em 0 #6f6, -.05em -.05em 0 #6f6;
+                    }
+
+                </style>
+                <link href='http://fonts.googleapis.com/css?family=Londrina+Outline&text=Two hundred and fifty-six colors.' rel='stylesheet' type='text/css'>
             </article>
 
         </section>
@@ -606,8 +718,8 @@
 
     <footer class="wrapper skin-dark" role="complimetary">
       <div class="site-info">
-        <p>a side project by <a href="http://etchapps.com">Etch</a></p>
-        <p><a href="https://twitter.com/intent/user?screen_name=etch">Follow @etch</a></p>
+        <p class="lead">More headings added each week</p>
+        <a class="btn" href="https://twitter.com/intent/user?screen_name=etch">Follow @etch</a>
       </div>
       <small>&copy;2014 <a href="http://etchapps.com">Etch</a></small>
     </footer>
@@ -616,7 +728,7 @@
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
     <script src="assets/js/base.js"></script>
-
+    <script async src="http://codepen.io/assets/embed/ei.js"></script>
     <script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
         (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
