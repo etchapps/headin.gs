@@ -1,0 +1,78 @@
+//
+// Layout
+// --------------------------------------------------
+
+// Sizing
+// ----------
+
+*, 
+*:before, 
+*:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+
+html { 
+  font-size: $base-unit; // default is 16px
+}
+
+
+// Scaling
+// ----------
+
+body {
+  background: $base-bg;
+  min-width: 20em;
+  margin:0;
+  line-height: $base-line-height; // default is 1.5
+  font-size: $base-font-size; // 12px
+
+  @media only screen and (min-width: $screen-sm) {
+    font-size: 1em; // 16px
+  }
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: 1.25em;  // 20px
+  }
+
+  @media only screen and (min-width: $screen-lg) {
+    font-size: 1.5em; // 24px
+  }
+
+  @media only screen and (min-width: $screen-xl) {
+    font-size: 1.75em; // 28px
+  }
+  
+}
+
+
+// Structure 
+// ---------------------
+
+.wrapper {
+  padding: 0 1.5em;
+  margin:0 auto;
+}
+
+footer {
+  text-align: center;
+  padding: $spacing-v $spacing-h;
+}
+
+.site-info {
+  padding: $spacing-v *4 0;
+}
+
+
+// helpers
+// ---------------------
+
+.pull-right {
+  float:right!important;
+}
+
+.pull-left {
+  float:left!important;
+}

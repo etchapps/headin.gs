@@ -10,30 +10,27 @@
  *
  */
 
-(function($, window, document, undefined) {
+(function($) {
     'use strict';
     // Create the defaults once
-    var pluginName = 'pentizr',
+    var pluginName = 'pentizr';
     // default options
-        defaults = {
-            username : '',
-            type : 'owned',
-            page : 1,
-            classname : 'pentizr',
-            social : false,
-            limit : 9,
-            template : '',
-            callback : ''
-        };
+    var defaults = {
+        username : '',
+        type : 'owned',
+        page : 1,
+        classname : 'pentizr',
+        social : false,
+        limit : 9,
+        template : '',
+        callback : ''
+    };
 
     // Create the defaults once
     function Plugin(element, options) {
         this.element = element;
 
         this.options = $.extend( {}, defaults, options);
-
-        this._defaults = defaults;
-        this._name     = pluginName;
         this.init();
     }
 
@@ -94,22 +91,14 @@
             iframe.attr('src', this.url.fullgrid);
 
             // Meta
-            var meta = $('<div class="meta"></div>'),
-                metaTitle = $('<h2></h2>');
+            var meta = $('<div class="meta"></div>');
+            var metaTitle = $('<h2></h2>');
 
             if (this.title !== null) {
                 metaTitle.html(this.title);
             }
 
             metaTitle.appendTo(meta);
-
-//      // Live/static switch
-//      meta_switch_mode = $('<div class="switch-mode"><a href="#" data-full="'+this.url.full+'" data-fullgrid="'+this.url.fullgrid+'">Live</a></div>');
-//      meta_switch_mode.appendTo(meta);
-//
-//      meta_switch_mode.find('a').click(function(e) {
-//        iframe.attr('src', $(this).data('full'));
-//      });
 
             // Open CodePen
             var metaCodepen = $('<div class="open-codepen"></div>');
@@ -183,19 +172,19 @@
                 return false;
             }
 
-            var template = _this.options.template,
-                customRegex = '',
-                toReplace = {
-                    title : this.title,
-                    description : this.description,
-                    views : this.views,
-                    hearts : this.hearts,
-                    comments : this.comments,
-                    urlDetails : this.url.details,
-                    urlPen : this.url.pen,
-                    urlFull : this.url.full
-                }
-                ;
+            var template = _this.options.template;
+            var customRegex = '';
+
+            var toReplace = {
+                title : this.title,
+                description : this.description,
+                views : this.views,
+                hearts : this.hearts,
+                comments : this.comments,
+                urlDetails : this.url.details,
+                urlPen : this.url.pen,
+                urlFull : this.url.full
+            };
 
             // Parse the template and replace the toReplace fields
             $.each(toReplace, function(i, v) {
@@ -224,4 +213,4 @@
         });
     };
 
-})(jQuery, window, document);
+})(jQuery);
