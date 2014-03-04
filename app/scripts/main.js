@@ -6,6 +6,9 @@
         type: 'loved',
         callback: function () {
             $('a[data-toggle]').tooltip();
+
+            $('.spinner').slideUp('slow');
+            $('.headings-list').slideDown('slow');
         },
         template: '' +
             '<article id="{{hash}}" class="heading">' +
