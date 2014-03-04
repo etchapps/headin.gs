@@ -176,8 +176,8 @@
             var customRegex = '';
 
             var toReplace = {
-                title : this.title,
-                description : this.description,
+                title : this.title === null ? '' : this.title,
+                description : this.description === null ? '' : this.description,
                 views : this.views,
                 hearts : this.hearts,
                 comments : this.comments,
