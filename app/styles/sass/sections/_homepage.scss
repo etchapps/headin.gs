@@ -56,4 +56,22 @@
     height: 100vh;
     margin-bottom: -6px;
   }
+
+  .meta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    i {
+      color: $shade-lightest;
+      float: right;
+      padding-right: 0.5em;
+    }
+
+    a {
+      color: $shade-lightest;
+      float: right;
+    }
+  }
 }
