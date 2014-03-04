@@ -12,10 +12,12 @@
             });
         },
         template: '' +
-            '<article class="heading">' +
+            '<article id="{{hash}}" class="heading">' +
             '<iframe src="{{urlFull}}" frameborder="0"></iframe>' +
             '<div class="meta">' +
-            '<i class="icon-twitter"></i> <i class="icon-download-2"></i>' +
+            '<a href="{{urlPen}}" title="View on Codepen"><i class="icon-download-2"></i></a>' +
+            '<a href="#{{hash}}"><i class="icon-twitter"></i></a>' +
+            '<i class="icon-info-sign"></i>' +
             '</div>' +
             '</article>'
     });

@@ -183,7 +183,8 @@
                 comments : this.comments,
                 urlDetails : this.url.details,
                 urlPen : this.url.pen,
-                urlFull : this.url.full
+                urlFull : this.url.full,
+                hash : this.hash
             };
 
             // Parse the template and replace the toReplace fields
