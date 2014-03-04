@@ -177,6 +177,7 @@
 
             var toReplace = {
                 title : this.title === null ? '' : this.title,
+                encodedTitle: encodeURI(this.title === null ? '' : this.title).replace('&amp;', 'and'),
                 description : this.description === null ? '' : this.description,
                 views : this.views,
                 hearts : this.hearts,
