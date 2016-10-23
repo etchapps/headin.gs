@@ -1,0 +1,37 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+.btn {
+  background: $btn-bg;
+  border: .15em solid $btn-border-color;
+  border-radius: $btn-border-radius;
+  color: $btn-color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $btn-font;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.25em;
+  margin-right: $spacing-h;
+  padding: $btn-padding;
+  text-transform: $heading-transform;
+  vertical-align: middle;
+  width: auto;
+
+  &:hover,
+  &:focus,
+  &.active {
+    background: $btn-hover-bg;
+    border-color: $btn-hover-border-color;
+    color: $btn-hover-color;
+  }
+
+  &:disabled,
+  &.disabled {
+    background: $btn-disabled-bg;
+    border-color: $btn-disabled-border-color;
+    color: $btn-disabled-color;
+  }
+}

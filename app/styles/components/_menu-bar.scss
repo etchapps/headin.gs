@@ -1,0 +1,52 @@
+//
+// Menu bar
+// --------------------------------------------------
+
+.menu-bar {
+  background: rgba(0,0,0,0.125);
+  background-blend-mode: difference, normal;
+  width: 100%;
+
+  a {
+    border-right: 1px solid $base-border-color;
+    color: $text-color;
+    display: inline-block;
+    padding: $padding-v $padding-h;
+  }
+
+  input {
+    border-top: 0;
+    margin-bottom: -1px;
+    padding: $padding-v + .2em 0;
+    text-indent: 1em;
+  }
+
+  &.fixed { // if used add fixed .has-menu-bar-fixed to body
+    left: 0;
+    opacity: .75;
+    position: fixed;
+    top: 0;
+    transition: opacity .15s ease-in-out;
+    z-index: 1001;
+
+    &:hover {
+      opacity: 1;
+    }
+
+  }
+
+  .search-form {
+    float: right;
+  }
+
+  .logo {
+    color: rgba(0,0,0,0.5);
+    font-size: 1em;
+    margin: 0;
+    padding: $padding-v $padding-h;
+
+    &:hover {
+      color: #333;
+    }
+  }
+}

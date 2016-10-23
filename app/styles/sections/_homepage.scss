@@ -1,0 +1,34 @@
+//
+// Homepage
+// --------------------------------------------------
+
+
+#heading-intro {
+  .word {
+    color: #fff;
+    display: inline-block;
+  }
+
+  .tld, .period {
+    display: inline-block;
+    transform: translate(0, 0);
+    transition: transform .25s ease-in-out;
+  }
+
+  .period {
+    color: $brand-primary;
+  }
+
+  &:hover {
+
+    .tld {
+      transform: translate(.25em, 0);
+    }
+
+    .period {
+      transform: translate(-.95em, 0);
+    }
+
+  }
+
+}

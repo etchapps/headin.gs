@@ -1,27 +1,13 @@
-(function ($) {
-    'use strict';
+import pens from './pens';
 
-    $('.codepen-wrapper').pentizr({
-        username: 'headin-gs',
-        type: 'loved',
-        callback: function () {
-            $('a[data-toggle]').tooltip();
+const headings = document.querySelector('.headings');
 
-            $('.spinner').slideUp('slow');
-            $('.headings-list').slideDown('slow');
-        },
-        template: '' +
-            '<article id="{{hash}}" class="heading">' +
-                '<iframe src="{{urlFull}}" frameborder="0"></iframe>' +
-                '<div class="meta">' +
-                    '<a href="{{urlPen}}" data-toggle="tooltip" data-title="View source">' +
-                        '<i class="icon-download-2"></i>' +
-                    '</a>' +
-                    '<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fheadin.gs%2F%23{{hash}}&via=etch&text={{encodedTitle}}.%20Be%20more%20creative%20with%20your%20headings."' +
-                        ' data-toggle="tooltip" data-title="Tweet this heading">' +
-                        '<i class="icon-twitter"></i>' +
-                    '</a>' +
-                '</div>' +
-            '</article>'
-    });
-}(jQuery));
+pens.forEach((pen) => {
+  const heading = document.createElement('iframe');
+  heading.src = `https://codepen.io/${pen[0]}/embed/preview/${pen[1]}`;
+  heading.frameborder = 0;
+  heading.allowtransparency = true;
+  heading.classList.add('heading');
+
+  headings.appendChild(heading);
+});

@@ -1,118 +1,77 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Headin.gs - an experimental showcase of web typography</title>
-        <meta name="description" content="An inspiring showcase of stylized web typography powered by google fonts and lashings of CSS. Grab the source & make it your own.">
-        <meta name="viewport" content="width=device-width">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/base.css">
-        <!-- endbuild -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
-        <script>
-            WebFontConfig = {
-                google: {
-                    families: [
-                        'Lato:100,300,900,900italic,300italic:latin'
-                    ]
-                }
-            };
+<head>
+  <meta charset="utf-8">
+  <title>headin.gs - an experimental showcase of web typography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="An inspiring showcase of stylized web typography powered by google fonts and lashings of CSS. Grab the source & make it your own.">
 
-            (function() {
-                var wf = document.createElement('script');
-                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-                wf.async = 'true';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(wf, s);
-            })();
+  <script>
+    document.getElementsByTagName('html')[0].setAttribute('class', 'js');
+  </script>
 
-        </script>
-    </head>
-    <body>
-        <header role="banner">
-            <div class="menu-bar fixed skin-dark">
-                <h1 class="logo pull-left">Headin<span class="text-brand">.</span>gs</h1>
-            </div>
-        </header>
+  <link href="/css/app.css" rel="stylesheet">
+</head>
 
-        <main role="main">
+<body>
+  <header role="banner">
+    <div class="menu-bar fixed skin-dark">
+      <h1 class="logo pull-left">Headin<span class="text-brand">.</span>gs</h1>
+    </div>
+  </header>
 
-            <div class="hero skin-dark">
-                <section class="wrapper">
-                    <h1 id="heading-intro">Be more creative <br/>with your <b class="word">head<span>i</span>n<span class="tld">gs</span><span class="period">.</span></b></h1>
-                    <p class="lead">Wrap your words in web fonts and coat them in CSS.</p>
-                    <div class="vishid">
-                        <a href="about.html" class="btn">About</a> <a href="contribute.html" class="btn">Contribute</a>
-                    </div>
-                    <p>a side project by <a href="http://etchapps.com"><strong>Etch</strong></a></p>
-                </section>
+  <main role="main">
 
-                <section class="wrapper vishid">
-                    <h1>About</h1>
-                    <p class="lead">We're fed up with Futura, pissed-off with Proxima Nova and we've had it with Helvetica!</p>
-                    <p>So we thought we've created a showcase to demonstrate what's possible and inspire designers.</p>
-                    <h2 id="tools">Typography tools &amp; resources</h2>
-                    <a href="https://twitter.com/intent/">Suggest</a>
-                    <ul>
-                        <li>
-                            <h4><a href="#">Google fonts</a></h4>
-                            <p>A big list of free fonts</p>
-                        </li>
-                    </ul>
-                </section>
+    <div class="hero skin-dark">
+      <section class="wrapper">
+        <h1 id="heading-intro">Be more creative <br/>with your <b class="word">head<span>i</span>n<span class="tld">gs</span><span class="period">.</span></b></h1>
+        <p class="lead">Wrap your words in web fonts and coat them in CSS.</p>
+        <div class="vishid">
+          <a href="about.html" class="btn">About</a> <a href="contribute.html" class="btn">Contribute</a>
+        </div>
+        <p>a side project by <a href="http://etchapps.com"><strong>Etch</strong></a></p>
+      </section>
 
-                <section class="wrapper vishid">
-                    <h1>Our favourite</h1>
-                    <p>Create your heading in codepen and send us the link</p>
-                </section>
-            </div>
+      <section class="wrapper vishid">
+        <h1>About</h1>
+        <p class="lead">We're fed up with Futura, pissed-off with Proxima Nova and we've had it with Helvetica!</p>
+        <p>So we thought we've created a showcase to demonstrate what's possible and inspire designers.</p>
+        <h2 id="tools">Typography tools &amp; resources</h2>
+        <a href="https://twitter.com/intent/">Suggest</a>
+        <ul>
+          <li>
+            <h4><a href="#">Google fonts</a></h4>
+            <p>A big list of free fonts</p>
+          </li>
+        </ul>
+      </section>
 
-            <div class="spinner"></div>
+      <section class="wrapper vishid">
+        <h1>Our favourite</h1>
+        <p>Create your heading in codepen and send us the link</p>
+      </section>
+    </div>
 
-            <section class="codepen-wrapper headings-list" style="display: none;"></section>
+    <section class="headings"></section>
 
-        </main>
+  </main>
 
-        <footer class="wrapper skin-dark" role="complimetary">
-            <div class="site-info">
-                <p class="lead">More headings added each week</p>
-                <a class="btn" href="https://twitter.com/intent/user?screen_name=etch">Follow @etch</a>
-            </div>
-            <small>&copy; 2014 <a href="http://etchapps.com">Etch</a></small>
-        </footer>
+  <footer class="wrapper skin-dark" role="complimetary">
+    <div class="site-info">
+      <p class="lead">More headings added each week</p>
+      <a class="btn" href="https://twitter.com/intent/user?screen_name=etch">Follow @etch</a>
+    </div>
+    <small>&copy; 2016 <a href="http://etchapps.com">Etch</a></small>
+  </footer>
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="bower_components/jquery/jquery.js"></script>
-        <script src="scripts/pentizr.js"></script>
-        <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <!--<script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>-->
-
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-
-        <script src="https://platform.twitter.com/widgets.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="https://platform.twitter.com/widgets.js"></script>
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q = [];ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');ga('send', 'pageview')
+  </script>
 </body>
+
 </html>
